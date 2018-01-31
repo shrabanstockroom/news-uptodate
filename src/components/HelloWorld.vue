@@ -27,9 +27,9 @@
 
             <div class="ten wide left aligned column">
               <h3 class="ibm"> {{article.title}}</h3>
-              <span class="ibm-type-light">Tech Crunch</span><span class="ibm-type-light">Dec 29, 2017</span> <span class="ibm-type-light">18:02 IST</span>
+              <span class="ibm-type-light">{{article.source.name}}</span><span class="ibm-type-light">Dec 29, 2017</span> <span class="ibm-type-light">18:02 IST</span>
               <p class="ibm-type-serif">{{article.description}}</p>
-              <a class="ibm-type-semibold" href="https://startupbbsr.com">Read more...</a>
+              <a class="ibm-type-semibold" target="_blank" v-bind:href="article.url">Read more...</a>
             </div>
 
 
